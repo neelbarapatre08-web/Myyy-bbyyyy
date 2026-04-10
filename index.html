@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For My Bby 💗</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: pink;
+    overflow: hidden;
+}
+
+/* Floating hearts */
+.heart {
+    position: absolute;
+    font-size: 20px;
+    animation: float 6s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh); }
+    100% { transform: translateY(-10vh); }
+}
+
+/* Pages */
+.page {
+    display: none;
+    height: 100vh;
+    padding: 20px;
+}
+
+.active {
+    display: block;
+}
+
+/* Title */
+h1 {
+    color: red;
+    text-align: center;
+}
+
+/* Button */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
+/* Paragraph */
+p {
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Ending line */
+.end {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Floating hearts script -->
+<script>
+for (let i = 0; i < 20; i++) {
+    let heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "💗";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (3 + Math.random() * 5) + "s";
+    document.body.appendChild(heart);
+}
+</script>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+    <h1>hellloooooo myyyy bbyyyy</h1>
+    <button onclick="nextPage()">Tap if u love meee 😼</button>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+    <h1>The ans of the question which u asked me that WHY SO I LOVE YOU SO MUCHH ??</h1>
+
+    <p>
+        meh isiliye itna pyaar karta hun kyu ki when i m with u , i feel that everthing around me js simple ,
+        i can feel that level comfort with u , u just be real with me and support me thats why i loveee youuu soo muchh 💗💗🫂🫂💋 ,
+        u r the calmness to me chaotic heart , u r the smooth wave to me ocean , the color of ur eyess ,
+        the softness of hr cheeks , the purity in ur eyes , the peace in jr arms , the texture of ur skin
+        and the smoothness of ur lips justt makes me fall more and more loveee withh youu myyy bbyyy 😌😌💗💗🫂🫂
+    </p>
+
+    <p class="end">
+        i loveeeeee youuuuuuu sooooo muccchhhhhh moreeeeeee myyyyyyyyyy loovveeeeeeeee 💋💋💋💋💋💋💋💋💋💋💗💗💗💗💗🫂🫂🫂🫂
+    </p>
+</div>
+
+<script>
+function nextPage() {
+    document.getElementById("page1").classList.remove("active");
+    document.getElementById("page2").classList.add("active");
+}
+</script>
+
+</body>
+</html>
